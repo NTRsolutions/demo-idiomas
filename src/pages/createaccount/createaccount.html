@@ -1,0 +1,69 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon class="menu-icon"><img src="assets/imgs/ic_menu.png"></ion-icon>
+    </button>
+        <ion-title>Create Account</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="form" padding-left padding-right>
+        <p text-center padding-bottom margin-bottom>Create your Account on MyWay</p>
+        <ion-list>
+            <ion-item>
+                <ion-label>Phone Number</ion-label>
+                <ion-input type="text" text-right [(ngModel)]='phone' value="{{phone}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Full Name</ion-label>
+                <ion-input type="text" text-right [(ngModel)]='name' value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Email Address</ion-label>
+                <ion-input type="text" text-right [(ngModel)]='email' value=""></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>College</ion-label>
+                <ion-select [(ngModel)]="college">
+                    <ion-option >Colegio Nacional</ion-option>
+                    <ion-option >South elementary</ion-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Level</ion-label>
+                <ion-select [(ngModel)]="level">
+                    <ion-option >Primary school</ion-option>
+                    <ion-option >High school</ion-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Group</ion-label>
+                <ion-select [(ngModel)]="group">
+                    <ion-option >1A</ion-option>
+                    <ion-option >1B</ion-option>
+                    <ion-option >2A</ion-option>
+                    <ion-option >5A</ion-option>
+                    <ion-option >9A</ion-option>
+                    <ion-option >9B</ion-option>
+                    <ion-option >10B</ion-option>
+                </ion-select>
+            </ion-item>
+
+            
+            
+        </ion-list>
+        <button ion-button full class="bg-thime btn-round btn-text" (click)="homePage()">Continue</button>
+        <p text-center>
+            <small>
+                By Registering ! agree to 
+                <span class="text-sky">
+                    Terms & conditon
+                </span>
+            </small>
+        </p>
+    </div>
+</ion-content>
